@@ -1,0 +1,22 @@
+{
+  "extends": ["airbnb"],
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "rules": {
+    "brace-style": "off",
+    "no-underscore-dangle": "off",
+    "import/no-extraneous-dependencies": "off"
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": [ "src/stories/*.js" ],
+      "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+      }
+    }
+  ]
+}
